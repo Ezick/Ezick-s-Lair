@@ -24,7 +24,7 @@ class CurrencyChecker:
             raise ConvertionException(f'Не удалось обработать валюту {quote}. /values')
 
         try:
-            amount = float(amount)
+            amount = int(amount)
         except ValueError:
             raise ConvertionException(f'Не удалось обработать количество {amount}')
 
